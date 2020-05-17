@@ -23,10 +23,10 @@ class App extends React.Component {
               id: snapShot.id,
               ...snapShot.data()
           });
-        })
+        });
       }
-      setCurrentUser({userAuth});
-    })
+      setCurrentUser(userAuth);
+    });
   }
   componentWillUnmount(){
     this.unsubscribeFromAuth();
@@ -34,7 +34,7 @@ class App extends React.Component {
 
   render(){
   return (
-    <div className="App">
+    <div>
       <Header />
       <Switch>
         <Route  exact  path='/' component={HomePage} />
