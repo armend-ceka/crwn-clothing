@@ -1,4 +1,4 @@
-import createSelector from '../../../node_modules/reselect/src/index';
+import { createSelector } from 'reselect';
 
 const selectShop = state => state.shop;
 
